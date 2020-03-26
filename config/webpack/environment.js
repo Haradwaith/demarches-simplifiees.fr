@@ -9,6 +9,7 @@ const resolve = {
 
 environment.splitChunks();
 environment.config.merge({ resolve });
+environment.loaders.delete('nodeModules');
 
 // Uncoment next lines to run webpack-bundle-analyzer
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
